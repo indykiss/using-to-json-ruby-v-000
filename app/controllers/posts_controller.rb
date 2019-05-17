@@ -5,7 +5,7 @@ class PostsController < ApplicationController
     @posts = Post.all
   end
 
-  def show; 
+  def show;
     @post = Post.find(params[:id])
       respond_to do |format|
         format.html { render :show }
